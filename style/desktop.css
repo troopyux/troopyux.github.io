@@ -1,0 +1,29 @@
+header{
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 50px 80px;
+}
+.nav__logo{
+    display: none;
+}
+.nav__option{
+    display: initial;
+}
+/*-------*/
+
+.section__container{
+flex-direction: row;
+}
+.section__container-information{
+    padding: 160px 0 0 0;
+    width: 50%;
+}
+.section__container-logo{
+    width: 50%;
+}
+.logo{
+    width: 50%;
+}
+
+/*---------*/
+

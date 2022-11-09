@@ -1,0 +1,268 @@
+:root{
+    /* Colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secundary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --gray: #BABABA;
+    --off-white: #FAF8F7;
+    --white: #FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--warm-black-1);
+    color: white;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row-reverse;
+    padding:30px 0 20px 0;
+}
+
+.nav__logo{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url(../assets/icons/icons8-menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav__select{
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    top: 0;
+    left: 0%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--gray);
+    padding-top: 48px;
+}
+.cancel{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url(/assets/icons/cancel.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aparece{
+    display: none;
+}
+
+.option{
+    font-size: 3.5rem;
+    padding:40px 0;
+    text-decoration: none;
+    color: var(--warm-black-1);
+}
+
+.option:hover{
+    color: red;
+}
+.header-logo h1 a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+}
+.nav__option{
+    display: none;
+    font-size: 2.2rem;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white; 
+}
+.nav__option:hover{
+    border-bottom: white dotted;
+    
+}
+
+/*---------*/
+
+
+.section__container{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.section__container-information{
+    padding: 40px 0 0 0;
+	width: 100%;
+    text-align: center;
+}
+.animate{
+    font-size: 6.4rem;
+    cursor: pointer;
+}
+.animate:hover{
+    color: #dfa216;
+}
+.section__container-information p{
+    font-size: 1.6rem;
+    padding: 20px 0;
+}
+.section__container-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+.logo{
+    width: 70%;
+    border-radius: 10px;
+}
+
+/*---------*/
+
+.section__container-about{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.section__container-about h1{
+    margin: 15px 10px;
+    font-size: 2.0rem;
+}
+
+.div__container-information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.div__container-information p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin: 10px 8px;
+}
+
+.div__container-information img{
+    margin: 10px 0;
+}
+
+/*----------------------*/
+
+.section__container-works{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.section__container-works h1{
+    font-size: 2.0rem;
+    margin: 15px 10px;
+}
+
+.section__container-works h2{
+    font-size: 1.6rem;
+}
+
+.div__container-lavidadeunarqui {
+    margin: 10px 10px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.div__container-lavidadeunarqui h2{
+    padding: 10px 0;
+}
+
+.div__container-lavidadeunarqui div img{
+    width: 280px;
+    padding: 10px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div__container-CM{
+    margin: 10px 10px;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.div__container-CM h2{
+    padding: 10px 0;
+}
+
+.div__container-CM div img{
+    width: 280px;
+    padding: 10px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------*/
+
+.footer__container{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    font-size: 1.6rem;
+}
+
+.div__container-contac{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.div__container-contac h1{
+    font-size: 2.0rem;
+    margin: 10px 10px;
+}
+
+.socialmedia__container-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram{
+    width: 45px;
+    height: 45px;
+    background-image: url(../assets/icons/icons8-instagram-old.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
