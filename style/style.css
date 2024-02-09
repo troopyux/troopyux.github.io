@@ -14,6 +14,7 @@ html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
     color: white;
+    background: linear-gradient( #0E0E0E , #319AA8);
 }
 
 /* --------------------------------------------------------------------------*/
@@ -23,7 +24,6 @@ html{
     justify-content: space-between;
     min-width: 430px;
     height: 73px;
-    background-color: var(--variant-black);
     border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
 }
 
@@ -33,10 +33,10 @@ html{
 }
 
 .header-container--logo{
-    margin-left: 55px;
-    width: 23px;
-    height: 36px;
-    background-image: url(/assets/icons/TroopyUx-NuevoLogoSVG.svg);
+    margin-left: 35px;
+    width: 32px;
+    height: 50px;
+    background-image: url(../assets/icons/TroopyUx-NuevoLogoSVG.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,22 +49,23 @@ html{
     font-size: 1.6rem;
     line-height: 20px;
     letter-spacing: 0.4em;
+    display: none;
 }
 
 .header-nav-menu{
     margin: 22px 22px 19px 0;
     width: 32px;
     height: 32px;
-    background-image: url(/assets/icons/Menu.svg);
+    background-image: url(../assets/icons/Menu.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------------*/
 
 main{
-    background-color: var(--variant-black);
 }
 
 .section1{
@@ -75,13 +76,13 @@ main{
 
 .section1-container{
     position: relative;
-    width: 430px;
+    width: auto;
     height: 295px;
 }
 
 .section1-container-title{
     position: absolute;
-    left: 81px;
+    left: calc(50% - 120px);
     top: 35px;
     width: 261px;
     height: 131px;
@@ -93,10 +94,20 @@ main{
     text-align: center;
 }
 
-.section1-container-descrip{
+.section1-container-descrip1{
+    position: absolute;
+    top: 190px;
+    left: calc(50% - 60px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.section1-container-descrip2{
     position: absolute;
     top: 210px;
-    left: 46px;
+    left: calc(50% - 100px);
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 1.2rem;
@@ -104,7 +115,7 @@ main{
 }
 
 .section1-social{
-    width: 430px;
+    /* width: 430px; */
     height: 225px;
     display: flex;
     justify-content: center;
@@ -118,58 +129,238 @@ main{
     margin: 0 24px;
 }
 
-.linkedin-logo{
+.linkedin{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/linkedin.svg);
+    background-image: url(../assets/icons/linkedin.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.youtube-logo{
+.youtube{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/youtube.svg);
+    background-image: url(../assets/icons/youtube.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.discord-logo{
+.x{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/discord.svg);
+    background-image: url(../assets/icons/X.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.github-logo{
+.github{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/github.svg);
+    background-image: url(../assets/icons/github.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.outlook-logo{
+.outlook{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/outlook.svg);
+    background-image: url(../assets/icons/outlook.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.instagram-logo{
+.instagram{
     width: 64px;
     height: 64px;
-    background-image: url(/assets/icons/instagram.svg);
+    background-image: url(../assets/icons/instagram.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* --------------------------------------------------------------------------*/
+
+.section2{
+    min-width: 430px;
+    height: 500px;
+}
+
+.section2-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.section2-header--icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../assets/icons/Vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section2-header--tittle{
+    margin: 15px 0 0 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 20px;
+}
+
+.section2-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.arrowl{
+    width: 40px;
+    height: 15px;
+    background-image: url(../assets/icons/arrowl.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.section2-container--box{
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border: #0E0E0E solid 1px;
+}
+
+.arrowr{
+    width: 40px;
+    height: 15px;
+    rotate: 180deg;
+    background-image: url(../assets/icons/arrowl.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------*/
+
+.section3{
+    min-width: 430px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
+.section3-header--icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../assets/icons/Perfil.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section3-header--tittle{
+    margin: 15px 0 0 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 20px;
+}
+
+.section3-container{
+    width: 360px;
+    height: 270px;
+    margin: 35px 0 0 0;
+}
+
+.section3-container--txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+.section3-image{
+    margin: 35px 0 0 0;
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/img/foto_perfil.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* --------------------------------------------------------------------------*/
+
+footer{
+    min-width: 430px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-social{
+    display: flex;
+}
+
+.social-ig{
+    width: 32px;
+    height: 32px;
+    margin: 0 5px 0 10px;
+    background-image: url(../assets/icons/footer-instagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-gh{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 0 10px;
+    background-image: url(../assets/icons/footer-github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-yt{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 0 10px;
+    background-image: url(../assets/icons/footer-youtube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-lk{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 0 10px;
+    background-image: url(../assets/icons/footer-linkedin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-copy{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 1.6rem;
+}
