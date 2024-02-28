@@ -1,1 +1,30 @@
+.header-nav2{
+    display: flex;
+}
 
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    margin: 12px 0 0 60px;
+}
+
+.menu > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 2.0rem;
+    line-height: 20px;
+}
+
+.menu > a:hover,
+.menu > a:focus{
+    border-bottom: #DADADA solid 1px;
+}
+
+.section3-container--txt{
+    clear: both;
+}
