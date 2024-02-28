@@ -246,13 +246,45 @@ html{
 }
 
 .section2-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 60px;
+    border: 5px solid #0e0e0e;
+    height: 250px;
+    overflow: hidden;
+}
+
+.section2-container--box{ /*item carrusel*/
+    height: 100%;
+    position: relative;
+    border: #0E0E0E solid 1px;
+}
+
+.section2-container--boxt{ /*tarjeta carrusel*/
+    height: 100%;
+}
+
+.section2-container--arrows{ /*flechas carrusel*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#box-target--1{
+    background-color: #47597E;
+}
+#box-target--2{
+    background-color: #4c6952;
+}
+#box-target--3{
+    background-color: #DBE6FD;
 }
 
 .arrowl{
+    display: block;
     width: 40px;
     height: 15px;
     background-image: url(../assets/icons/arrowl.svg);
@@ -262,14 +294,8 @@ html{
     cursor: pointer;
 }
 
-.section2-container--box{
-    width: 250px;
-    height: 250px;
-    background-color: transparent;
-    border: #0E0E0E solid 1px;
-}
-
 .arrowr{
+    display: block;
     width: 40px;
     height: 15px;
     rotate: 180deg;
