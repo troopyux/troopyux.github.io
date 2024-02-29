@@ -1,7 +1,6 @@
-function cambiarTema(){
-    console.log('este boton funca');
-    var ancla = document.getElementsByClassName('aparece');
-    for(var i = 0; i< ancla.length; i++){
-        ancla[i].classList.toggle('aparece');
-    }
-}
+const btnTheme = document.querySelector('#switch');
+
+btnTheme.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnTheme.classList.toggle('active');
+});

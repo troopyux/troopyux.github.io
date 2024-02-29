@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style/tablet.css" media="(min-width : 600px)">
     <link rel="stylesheet" href="style/desktop.css" media="(min-width : 1024px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="js/java.js" language="javascript" type="text/javascript"></script>
     <script src="js/jquery-3.6.0.min.js" language="javascript" type="text/javascript"></script>
     <title>TroopyUx</title>
     <link rel="website icon" type="svg" href="assets/icons/TroopyUx-NuevoLogoSVG.svg">
@@ -25,11 +24,9 @@
           <a href=""><div class="header-container--logo"></div></a>
           <p class="header-container--title">TroopyUx</p>
         </div>
-        <div class="header-theme" onclick = cambiarTema()>
-          <div class="box">
-            <p class="box-text">Dark</p>
-          </div>
-          <div class="circle"></div>
+        <div class="box-theme " id="switch">
+          <span class="box-light"></span>
+          <span class="box-dark"></span>
         </div>
       </div>
     </header>
@@ -102,5 +99,6 @@
         </div>
       </footer>
     </main>
+    <script src="js/java.js" language="javascript" type="text/javascript"></script>
   </body>
 </html>
