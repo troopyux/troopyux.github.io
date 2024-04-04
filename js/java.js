@@ -14,7 +14,6 @@ btnTheme.addEventListener('click', () => {
 });
 
 //Codigo para Carrusel de Proyectos
-
 const mount = () => slider_content[index].classList.add('active');
 const unmount = () => slider_content[index].classList.remove('active');
 mount();
